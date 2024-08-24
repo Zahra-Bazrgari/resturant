@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px 60px;
+    background-color: red;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.menu-container{
+    border-radius: 15px;
+    background-color: rgb(243, 249, 255);
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    box-shadow: 28px 16px 40px -20px rgba(0, 0, 0, 0.086);
+    background-color: rgb(243, 249, 255);
+}
+
+.menu{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    height: 580px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-track-color: rgb(243, 249, 255);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.card{
+    padding: 5px;
+    background-color: white;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity{
+    width: 40px;
+}
+
+.orders-summary{
+    padding: 15px;
+    border-radius: 15px;
+    height: fit-content;
+    background-color: rgb(241, 249, 255);
+}
+
+.order{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.final-amount{
+    padding: 8px 3px;
+    border-radius: 5px;
+    background-color: rgb(255, 197, 36);
+}
+
+.discount-section{
+    display: flex;
+    margin-bottom:25px;
+}
+
+.discount-submit{
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: rgb(170, 30, 12);
+}
+
+#discount-code{
+    width: 100%;
+    padding: 6px 3px;
+    border: none;
+}
+
+#submit-order{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(170, 30, 12);
+}
+
+#discount-error{
+    color: red;
+    margin-bottom: 15px;
+}
